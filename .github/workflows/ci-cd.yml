@@ -7,9 +7,10 @@ on:
   pull_request:
     branches:
       - dev
+  workflow_dispatch:
 
 env:
-  BUILD_TYPE: Release
+  BUILD_TYPE: RelWithDebInfo
   VCPKG_ROOT: ${{github.workspace}}/vcpkg
 
 jobs:
