@@ -23,9 +23,7 @@ jobs:
           submodules: recursive
          
       - name: Install Qt
-        run: sudo apt install -y qtbase5-dev
-          
-      - uses: lukka/get-cmake@latest
+        run: sudo apt install -y qtbase5-dev cmake
       
       - name: Restore artifacts, setup vcpkg
         uses: lukka/run-vcpkg@v11
